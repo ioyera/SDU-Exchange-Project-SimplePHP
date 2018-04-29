@@ -2,6 +2,6 @@
 This is screen of main page of website
 <h2>
 <p align="center">
-<img src="images/123.png" width=300 />
+<img src="images/123.png" width=600 />
 </p>
 <h2>
