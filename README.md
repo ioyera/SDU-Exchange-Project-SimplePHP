@@ -1,5 +1,5 @@
-# SDU Student Exchange Programm Web Project
-This is screen of main page of website
+# SDU Student Exchange Program Web Project
+This project I did for Exchange Program in International Department of SDU. The reason why I did it was my participating in this program(I was in UNIST in Ulsan, Korea)
 <h2>
 <h2 align="center">Main Page</h2>
 <p align="center">
