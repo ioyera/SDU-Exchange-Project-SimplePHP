@@ -1,5 +1,5 @@
 # SDU Student Exchange Program Web Project
-This project I did for Exchange Program in International Department of SDU. The reason why I did it was my participating in this program(I was in UNIST in Ulsan, Korea)
+This project I did for Exchange Program in International Department of SDU. The reason why I did it was my participating in this program(I was in UNIST, Ulsan, Korea)
 <h2>
 <h2 align="center">Main Page</h2>
 <p align="center">
