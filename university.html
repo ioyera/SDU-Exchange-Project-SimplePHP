@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+
+		<title>Exchange</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main2.css" />
+		<link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css” media=”screen”>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style2.css">
+
+        <link rel="stylesheet" href="assets/css/media-queries.css">
+
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<style>
+	.fa:hover{
+		color: rgb(42,182,251);
+		opacity: 1;
+	}
+	input[type="text"]{
+	      background-image: url('images/searchicon.png');
+	      background-size: 24px 24px;
+		  background-position: 10px 10px;
+		  background-repeat: no-repeat;
+		  position: relative;
+		  margin-left: 38%;
+		  width: 300px;
+		  font-size: 16px;
+		  padding: 12px 20px 12px 40px;
+		  border: 1px solid #ddd;
+		  margin-bottom: 50px;
+		  margin-top: 50px;
+	}
+	input[type="text"]:hover{
+		border:1px solid rgb(42,182,251);
+	}
+	input[type="text"]:focus {
+		background-image: url('images/searchicon.png');
+	    background-size: 24px 24px;
+		background-position: 10px 10px;
+		background-repeat: no-repeat;
+		position: relative;
+		margin-left:0px;
+    	width: 100%;
+    	border: 1px solid rgb(221,221,221);
+	}
+	input[type="text"]:focus:hover {
+		border:1px solid rgb(42,182,251);
+	}
+	#myTable {
+	  border-collapse: collapse;
+	  width: 100%;
+	  border: 1px solid #ddd;
+	  font-size: 18px;
+	}
+
+	#myTable th, #myTable td {
+	  text-align: left;
+	  padding: 12px;
+	}
+
+	#myTable tr {
+	  border-bottom: 1px solid #ddd;
+	}
+
+	#myTable tr.header, #myTable tr:hover {
+	  background-color: #f1f1f1;
+	}
+	#mytable{
+		visibility: hidden;
+	}
+	.video {
+    position: absolute;
+    top:221px;
+    left: 400px;
+    width: 100%;
+    height: 200px;
+    z-index: -200;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+	}
+	
+	a{
+		color: rgb(42,182,251);
+		margin-bottom: 15px;
+	}
+
+	a:hover{
+		color:violet;
+	}
+	
+		
+	#top-link-block.affix-top {
+	    position: absolute; /* allows it to "slide" up into view */
+	    bottom: -82px; /* negative of the offset - height of link element */
+	    left: 10px; /* padding from the left side of the window */
+	}
+	#top-link-block.affix {
+	    position: fixed; /* keeps it on the bottom once in view */
+	    bottom: 18px; /* height of link element */
+	    left: 10px; /* padding from the left side of the window */
+	}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+	position: relative;
+	width: 100%;
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+	</style>
+		<!-- <link rel="stylesheet" href="assets/css/main2.css" /> -->
+	</head>
+	<body>
+		
+		<div class="page-wrap">
+			
+			
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html"  onclick="play()"><span class="icon fa-home"></span></a></li>
+						<li><a href="gallery.html" onclick="play()"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="generic.html" onclick="play()"><span class="icon fa-file-text-o"></span></a></li>
+						<li><a href="login.html" onclick="play()"><span class="icon fa-user"></span></a></li>
+						<li><a href="university.html" class="active" onclick="play()"><span class="icon fa-university"></span></a></li>
+						<li><a href="aboutus.html"  onclick="play()"><span class="icon fa-info-circle"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Banner -->
+					<section id="One" class="wrapper style3" style="background-image: url('images/un.jpg'); height: 300px;">
+						<div class="inner">
+							<header class="align-center">
+								<p>Countries and universities which you want to study</p>
+								<h2>Universities</h2>
+							</header>
+						</div>
+					</section>
+
+
+
+
+
+					<div class="search" style="position: relative; width: 100%; border: 1px solid rgb(230,230,230); background-color: white; margin-top: 50px; margin-bottom: 50px">
+						<p style="font-size: 20px; margin-top: 30px; color: black;">Search countries and universities which you want to find</p>
+
+						<input id="myInput" type="text" placeholder="Search for countries.." name="search" onkeyup="myFunction()">
+						<table id="myTable" style="width: 100%; display: none;">
+						  <tr>
+						    <td style="width: 100%; padding-bottom: 40px;">
+						    	<h2 style="position: relative; text-align: center; padding-bottom: 10px;">France</h2>
+						    	<img src="images/paris.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">The French educational system is highly centralized and organized, with many subdivisions. It is divided into the three stages of enseignement primaire (primary education), enseignement secondaire (secondary education), and enseignement supérieur (higher education). In French higher education, the following degrees are recognized by the Bologna Process (EU recognition): Licence and Licence Professionnelle (bachelor's degrees), and the comparably named Master and Doctorat degrees.</p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of France</h3>
+								<a href="universities/psl.html" style="margin-left: 50px; margin-top: 10px;">1. Paris Sciences et Lettres - PSL Research University Paris</a>
+
+
+								<br>
+								<a id="myBtn" href="#" style="margin-left: 50px; margin-top: 10px;">2. École Polytechnique</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">3. Pierre and Marie Curie University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. Paris-Sud University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. École Normale Supérieure de Lyon</a>
+								
+						    </td>
+							</br>
+						  </tr>
+
+
+						  <tr>
+						    <td style="padding-bottom: 40px;">
+						    	<h2 style="position: relative; text-align: center; padding-bottom: 10px;">United States of America</h2>
+						    	<img src="images/usa.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">Higher education in the United States is an optional final stage of formal learning following secondary education. Higher education, also referred to as post-secondary education, third stage, third level, or tertiary education occurs most commonly at one of the 4,726 Title IV degree-granting institutions, either colleges or universities in the country. These may be public universities, private universities, liberal arts colleges, community colleges, or for-profit colleges. High visibility issues include greater use of the Internet, such as massive open online courses, competency-based education, sexual assault, cutbacks in state and local spending, rapidly rising tuition and increasing student loan debt.</p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of USA</h3>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">1. Stanford University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">2. Massachusetts Institute of Technology (MIT)</a>
+								<br>
+								<a href="universities/harvard.html" style="margin-left: 50px; margin-top: 10px;">3. Harvard University</a>
+						    	<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. Princeton University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. Columbia University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">6. California Institute of Technology</a>
+							</td>
+
+						  </tr>
+
+
+						  <tr>
+						    <td style="padding-bottom: 40px;">
+						    	<h2 style="position: relative; text-align: center; padding-bottom: 10px;">United Kingdom</h2>
+						    	<img src="images/uk.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">There are more than 60 universities in the U.K. The leadinguniversities are Cambridge, Oxford and London. English universitiesdiffer from each other in traditions, general organization, internalgoverment, etc. British universities are comparatively small, theapproximate number is about 7-8 thousand students. Most universitieshave under 3000 students, some even less than 1500 ones. London andOxford universities are international, because people from many partsof the world come to study at one of their colleges. A number ofwellknown scientists and writers, among them Newton, Darvin, Byronwere educated in Cambridge.</p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of UK</h3>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">1. University of Oxford</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">2. University of Cambridge</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">3. 
+								Imperial College London</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. University College London</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. London School of Economics and Political Science</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">6. University of Leeds</a>
+						    
+							</td>
+						  </tr>
+
+
+						  <tr>
+						    <td style="padding-bottom: 40px;">
+						    	<h2 style="position: relative; text-align: center; padding-bottom: 10px;">Germany</h2>
+						    	<img src="images/germany.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">Universities and institutions of equivalent status to universities are the only higher education institutions in Germany with the right to confer doctorates. Universities are normally strongly research-oriented and typically offer a wide range of subjects. Some universities specialise in particular fields (e.g. technology, art, or medicine). Universities in Germany also include a number of religious and philosophical-theological institutions, as well as universities of education in Baden-Württemberg that provide teacher training programmes.</p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of Germany</h3>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">1. LMU Munich</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">2. Technical University of Munich</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">3. Heidelberg University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. Humboldt University of Berlin</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. RWTH Aachen University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">6. Heidelberg University</a>
+						    
+							</td>
+						  </tr>
+
+
+						  <tr>
+						    <td style="padding-bottom: 40px;">
+						    	<h2 style="position: relative; text-align: center; padding-bottom: 10px;">Canada</h2>
+						    	<img src="images/canada.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">In Canada, the constitutional responsibility for higher education rests with the provinces of Canada. The higher education systems in Canada's ten provinces include their historical development, organization (e.g., structure, governance, and funding), and goals (e.g., participation, access, and mobility). Each of the three territories in Canada (i.e., Nunavut, Northwest Territories, and Yukon) have separate higher education systems that reflect territorial history, organization, and goals in the context of geographical challenges.</p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of Canada</h3>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">1. University of Toronto</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">2. University of British Columbia</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">3. McGill University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. McMaster University </a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. University of Montreal</a>
+						    
+							</td>
+						  </tr>
+
+
+						  <tr>
+						    <td style="padding-bottom: 40px;">
+								<h2 style="position: relative; text-align: center; padding-bottom: 10px;">Italy</h2>
+						    	<img src="images/rome.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">Higher education in Italy is mainly provided by a large and international network of public and state affiliated universities. State-run universities of Italy are under the supervision of Italian's Ministry of Education. There is also a number of private universities and state-run post-secondary educational centers providing a vocational instruction.
+								Italian universities are among the oldest universities in the world. In particular the University of Bologna (founded in 1088, the oldest university in the world), the University of Padua, founded in 1222, and the University of Naples, founded in 1224, are among the most ancient state universities in Europe.[1][2] Most universities in Italy are state-supported.</p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of Italy</h3>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">1. Scuola Superiore Sant’Anna</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">2. Scuola Normale Superiore di Pisa</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">3.  University of Bologna</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. Vita-Salute San Raffaele University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. University of Trento</a>
+						    </td>
+						  </tr>
+
+
+						  <tr>
+						    <td style="padding-bottom: 40px;">
+						    	<h2 style="position: relative; text-align: center; padding-bottom: 10px;">Malaysia</h2>
+						    	<img src="images/malaysia.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">The higher education sector is responsible for the operation of higher education institutions (HEIs) in Malaysia and is under the jurisdiction of the Ministry of Higher Education (MOHE). The education sector has always enjoyed the highest national development budget which symbolises the commitment of the Malaysian government towards education. 
+								Malaysia's HEIs (i.e. public universities, private higher educational institutions, polytechnics and community colleges) housed more than a million students in 2011, of which about 93,000 were international students from more than 100 countries. In contrast, there were about 89,686 Malaysian students (27,003 receiving sponsorship and 62,683 self-funded) who were studying overseas in 2011.</p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of Malaysia</h3>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">1. Universiti Malaya</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">2. Universiti Putra Malaya</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">3.  Universiti Kebangsaan Malaysia</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. Universiti Teknologi Malaysia</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. Universiti Sains Malaysia</a>
+						  </tr>
+
+
+						  <tr>
+						    <td style="padding-bottom: 40px;">
+						    	<h2 style="position: relative; text-align: center; padding-bottom: 10px;">South Korea</h2>
+						    	<img src="images/korea2.jpg" style="position: relative; width: 500px; height: 300px; margin-left: 29%;">
+								<p style="position: relative; margin-top: 40px; text-align: center; padding-bottom: 20px;">The growth of higher education in South Korea was influenced since ancient times. During the period of King So-Su-Rim in the kingdom of Goguryeo, Tae-Hak, the national university, focused on the study of Confucianism, martial arts and literature. In 551, Silla, one of 3 kingdoms, including Goguryeo established Guk-Hak and cheirospasm was taught. It also initiated vocational education and training that taught astronomy and medicine. 
+								Presently there are universities and colleges whose programmes last for 4 to 6 years. Also there are many open Universities, industrial Universities, vocational colleges, and universities of technology and education. </p>
+								<h3 style="margin-left: 50px; margin-bottom: 10px;">Universities of South Korea</h3>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">1. Seoul National University </a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">2. KAIST – Korea Advanced Institute of Science & Technology</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">3.  Pohang University of Science and Technology (POSTECH)</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">4. Korea University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">5. Yonsei University</a>
+								<br>
+								<a href="#" style="margin-left: 50px; margin-top: 10px;">6. UNIST - Ulsan National Institute of Science and Technology</a>
+						    </td>
+						  </tr>
+						</table>
+
+
+					
+
+
+
+
+			<!-- <div id="myTable" style="border-bottom: 2px solid rgb(230,230,230); position: relative; padding-top: 50px; padding-bottom: 50px; width: 100%;">
+				<h2>Korea</h2>
+				<img src="images/korea.jpg" style="position: relative; width: 800px; height: 500px;">
+			</div>
+
+			<div id="myTable" style="border-bottom: 2px solid rgb(230,230,230); position: relative; padding-top: 50px; padding-bottom: 50px; width: 100%;">
+				<h2>USA</h2>
+				<img src="images/usa.jpg" style="position: relative; width: 800px; height: 500px;">
+			</div>
+
+			<div id="myTable" style="border-bottom: 2px solid rgb(230,230,230); position: relative; padding-top: 50px; padding-bottom: 50px; width: 100%;">
+				<h2>Europe</h2>
+				<img src="images/paris.jpg" style="position: relative; width: 800px; height: 500px;">
+			</div> -->
+<!-- </div> -->
+
+        <div class="section-container section-container-gray" style="background-color: white; border-bottom: 1px solid rgb(230,230,230)">
+	        <div class="container">
+		        <div class="row">
+		        	<div class="col-sm-12">
+		        		<div class="scroll-to-top" style="height: 60px;">
+		        			<a href="#top" class="well well-sm" style="border:0px solid white; background-color: white; margin-top: 10px; margin-left: -20px; position: absolute;"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+								<i class="fa fa-chevron-up"></i>
+						    </a>
+		        		</div>
+		        	</div>
+		        </div>
+	        </div>
+        </div>
+
+		<!-- Footer -->
+			<footer style="background-color: white;">
+	        <div class="container">
+	            <div class="row">
+                    <div class="col-sm-7 footer-copyright">
+                    	&copy; Designed by: <a style="color: rgb(42,182,251);"  href="http://azmind.com">Yerassyl</a>.
+                    </div>
+                    <div class="col-sm-5 footer-social">
+                    	<a href="#"><i class="fa fa-facebook"></i></a>
+	                	<a href="#"><i class="fa fa-dribbble"></i></a>
+	                    <a href="#"><i class="fa fa-twitter"></i></a>
+	                    <a href="#"><i class="fa fa-google-plus"></i></a>
+	                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+	            </div>
+	        </div>
+        </footer>			
+    </section>
+
+    	<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		</script>
+
+    		<script>
+				function myFunction() {
+
+				  var input, filter, table, tr, td, i;
+
+				  input = document.getElementById("myInput");
+				  filter = input.value.toUpperCase();
+				  table = document.getElementById("myTable");
+
+				  tr = table.getElementsByTagName("tr");
+				  for (i = 0; i < tr.length; i++) {
+				    td = tr[i].getElementsByTagName("td")[0];
+				    if (td) {
+
+				      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				      	document.getElementById("myTable").style.display = 'block';
+				        tr[i].style.display = "";
+				      } else {
+				        tr[i].style.display = "none";
+				      }
+				    }       
+				  }
+				}
+			</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main2.js"></script>
+			<!-- <script src="assets/js/querylo	ader2.min.js" type="text/javascript"></script> -->
+			<!-- <script src="assets/js/wow.min.js"></script> -->
+			<!-- <script src="assets/js/scroll.js"></script> -->
+			
+<!-- <script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script> -->
+	</body>
+</html>
